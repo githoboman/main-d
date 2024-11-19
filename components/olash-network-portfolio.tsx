@@ -213,7 +213,7 @@ export function OlashNetworkPortfolio() {
               </div>
             </div>
             <div className="lg:w-1/2 relative mt-10 lg:mt-0">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-indigo-800 opacity-20 rounded-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-indigo-800 opacity-20 rounded-lg"></div> 
               <div className="relative w-full h-[300px] sm:h-[400px] overflow-hidden rounded-lg shadow-2xl">
                 <Image
                   src="/images/devv.png"
@@ -221,9 +221,9 @@ export function OlashNetworkPortfolio() {
                   width={800}
                   height={600}
                   priority
-                  className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                /*   className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
                     currentImageIndex === 0 ? 'opacity-100' : 'opacity-0'
-                  }`}
+                  }`} */ 
                 />
                 <Image
                   src="/images/yoour.jpg"
@@ -232,7 +232,7 @@ export function OlashNetworkPortfolio() {
                   height={600}
                   className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
                     currentImageIndex === 1 ? 'opacity-100' : 'opacity-0'
-                  }`}
+                  }`} 
                 />
                 <Image
                   src="/images/pnngssr.png"
@@ -254,9 +254,7 @@ export function OlashNetworkPortfolio() {
                 />                  
               
               </div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-pink-500 rounded-full w-32 h-32 flex items-center justify-center z-20">
-                <Cpu className="w-16 h-16 text-white" />
-              </div>
+             
             </div>
           </div>
         </div>
