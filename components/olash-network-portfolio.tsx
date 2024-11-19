@@ -111,7 +111,7 @@ const SideNav = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (isOpen: b
           <li><a href="#services" onClick={(e) => { e.preventDefault(); smoothScroll('services'); setIsOpen(false); }} className="block py-2 hover:text-yellow-300 transition-colors">Services</a></li>
           <li><a href="#work" onClick={(e) => { e.preventDefault(); smoothScroll('work'); setIsOpen(false); }} className="block py-2 hover:text-yellow-300 transition-colors">Our Work</a></li>
           <li><a href="#skills" onClick={(e) => { e.preventDefault(); smoothScroll('skills'); setIsOpen(false); }} className="block py-2 hover:text-yellow-300 transition-colors">Skills</a></li>
-          <li><a href="#stack" onClick={(e) => { e.preventDefault(); smoothScroll('stack'); setIsOpen(false); }} className="block py-2 hover:text-yellow-300 transition-colors">Tech Stack</a></li>
+          
         </ul>
       </div>
     </div>
@@ -394,61 +394,6 @@ export function OlashNetworkPortfolio() {
               <SkillCategory title="Styling" skills={["CSS", "Tailwind CSS", "Styled Components", "Sass"]} />
               <SkillCategory title="Design" skills={["Figma", "Framer", "Webflow", "UI/UX Principles"]} />
               <SkillCategory title="Tools" skills={["Git", "Webpack", "Jest", "Storybook"]} />
-            </div>
-          </div>
-        </section>
-
-        {/* Tech Stack Banner */}
-        <section id="stack" className="py-16 px-4 bg-gradient-to-tr from-[#0e1a34] via-[#0e1a34] to-[#0ea5e9] relative overflow-hidden">
-          <div className="absolute inset-0 z-0 opacity-20">
-            <Image 
-              src="/placeholder.svg?height=1080&width=1920" 
-              alt="Tech background" 
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="max-w-6xl mx-auto text-center relative z-10">
-            <h2 className="text-3xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">
-              My Tech Stack
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div>
-                <h3 className="font-semibold mb-4 text-xl text-emerald-400">Front-End</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>TypeScript</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-4 text-xl text-teal-400">Styling</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>CSS</li>
-                  <li>Tailwind CSS</li>
-                  <li>Styled Components</li>
-                  <li>Sass</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-4 text-xl text-yellow-400">Design</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>Figma</li>
-                  <li>Framer</li>
-                  <li>Webflow</li>
-                  <li>Adobe XD</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-4 text-xl text-green-400">Other</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>Git</li>
-                  <li>API Integration</li>
-                  <li>Responsive Design</li>
-                  <li>Performance Optimization</li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>
