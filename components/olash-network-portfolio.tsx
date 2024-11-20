@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { Code2, Layout, BarChart, Server, Cpu, ChevronLeft, ChevronRight, Menu, X } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from 'next/image'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -39,25 +39,29 @@ const portfolioItems = [
     title: "E-commerce Platform",
     description: "Developed a responsive e-commerce platform with a seamless checkout process and real-time inventory management.",
     image: "/placeholder.svg?height=600&width=800",
-    technologies: ["Next.js", "React", "Tailwind CSS", "Stripe API"]
+    technologies: ["Next.js", "React", "Tailwind CSS", "Stripe API"],
+    url: "https://example.com/ecommerce"
   },
   {
     title: "Portfolio Website",
     description: "Designed and built a custom portfolio website showcasing projects and skills with a modern, interactive interface.",
     image: "/placeholder.svg?height=600&width=800",
-    technologies: ["React", "Framer Motion", "Styled Components", "Netlify"]
+    technologies: ["React", "Framer Motion", "Styled Components", "Netlify"],
+    url: "https://example.com/portfolio"
   },
   {
     title: "Task Management App",
     description: "Created a feature-rich task management application with real-time updates and collaborative features.",
     image: "/placeholder.svg?height=600&width=800",
-    technologies: ["React", "TypeScript", "Firebase", "Material-UI"]
+    technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
+    url: "https://example.com/task-app"
   },
   {
     title: "Weather Dashboard",
     description: "Developed an interactive weather dashboard with location-based forecasts and historical data visualization.",
     image: "/placeholder.svg?height=600&width=800",
-    technologies: ["React", "Chart.js", "OpenWeatherMap API", "Geolocation API"]
+    technologies: ["React", "Chart.js", "OpenWeatherMap API", "Geolocation API"],
+    url: "https://example.com/weather-dashboard"
   }
 ]
 
@@ -332,8 +336,9 @@ export function OlashNetworkPortfolio() {
           </div>
         </section>
 
-        {/* Portfolio Section */}
-        <section id="work" className="py-16 px-4 bg-gradient-to-br from-[#0e1a34] via-[#0e1a34] to-[#0ea5e9] relative">
+        
+         {/* Portfolio Section */}
+         <section id="work" className="py-16 px-4 bg-gradient-to-br from-[#0e1a34] via-[#0e1a34] to-[#0ea5e9] relative">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">
               My Portfolio
@@ -357,6 +362,17 @@ export function OlashNetworkPortfolio() {
                               {tech}
                             </span>
                           ))}
+                        </div>
+                        <div className="mt-4">
+                          <Button
+                            variant="outline"
+                            className="w-full bg-[#1e3a8a] text-white hover:bg-[#2d4eb1]"
+                            asChild
+                          >
+                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                              View Project
+                            </a>
+                          </Button>
                         </div>
                       </div>
                     </div>
