@@ -268,8 +268,8 @@ export function OlashNetworkPortfolio() {
               About Me
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
-              <Avatar className="w-32 h-32 border-4 border-pink-400">
-                <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Olash Network Avatar" />
+              <Avatar className="w-32 h-32 border-4 border-cyan-400">
+                <AvatarImage src="/images/polly.jpeg" alt="Olash Network Avatar" />
                 <AvatarFallback>ON</AvatarFallback>
               </Avatar>
               <div className="text-lg text-gray-300 max-w-2xl text-center md:text-left">
