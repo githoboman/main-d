@@ -43,25 +43,25 @@ const portfolioItems = [
     url: "https://example.com/ecommerce"
   },
   {
-    title: "Portfolio Website",
+    title: "Template Website",
     description: "Designed and built a custom portfolio website showcasing projects and skills with a modern, interactive interface.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/framing.png",
     technologies: ["React", "Framer Motion", "Styled Components", "Netlify"],
-    url: "https://example.com/portfolio"
+    url: "https://inclusive-position-369540.framer.app/"
   },
   {
-    title: "Task Management App",
+    title: "graphic designer portfolio",
     description: "Created a feature-rich task management application with real-time updates and collaborative features.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/uniers.png",
     technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
-    url: "https://example.com/task-app"
+    url: "https://uniers.vercel.app/"
   },
   {
-    title: "Weather Dashboard",
+    title: "Glad Fiath insurance",
     description: "Developed an interactive weather dashboard with location-based forecasts and historical data visualization.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/glad-faith.png",
     technologies: ["React", "Chart.js", "OpenWeatherMap API", "Geolocation API"],
-    url: "https://example.com/weather-dashboard"
+    url: "https://gladd-faith-e3qs.vercel.app/"
   }
 ]
 
